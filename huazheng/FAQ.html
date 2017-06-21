@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FAQ常见问题</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/FAQ.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header id="header">
+	          <div class="header-content clearfix">
+	            <div class="logo"><img src="images/logo.png"></div>
+	            <nav class="navigation" role="navigation">
+	              <ul class="primary-nav">
+	                <li><a href="businessintro.html">公司业务</a></li>
+	                <li><a href="systemintro.html">平台功能</a></li>
+	                <li><a href="apiintro.html">二次开发接口</a></li>
+	                <li><a href="FAQ.html">常见问题FAQ</a></li>
+	                <li><a href="contactus.html">联系我们</a></li>
+	                <li><a href="login.html">登录</a></li>
+	                <li><a href="home.html">返回首页</a></li>
+	              </ul>
+	            </nav>
+	            <a href="#" class="nav-toggle">Menu<span></span></a>
+	          </div>
+	  	</header>
+	  	<!-- <span class="blank"></span> -->
+	  	<div class="content">
+	  		<div class="container">
+	  			<div class="content-nav">
+					<ul>
+						<li class="active">基础问题答疑</li>
+						<li>无法正常使用？</li>
+						<li>其他细节</li>
+						<li>人工服务</li>
+					</ul>
+				</div>
+				<div class="nav-list on">
+					<ul>
+						<li>
+							<p>一、如何开始使用？<br>答：关注微信公众号【中移物联网卡】通过“查询续费”功能，进行续费激活；之后将流量卡放置到设备中开机。</p>
+			                <p>二、如何续费？<br>答：有两种续费方式：第一种为关注微信公众号【中移物联网卡】，使用查询续费功能自助续费。第二种为经销商通过与我司技术人员的沟通，根据我司提供的接口进行二次开发。在第三方平台中实现续费充值。</p>
+			                <p>三、流量卡套餐介绍？<br>答：1、首先我们是纯流量卡，没有余额的概念，都是以剩余流量表示的。<br>2、套餐流量无使用限制，直到购买的总流量用完或到期停机，每个自然月最后一天为月结日（30或31号）；<br>
+			                    3.每月限制只能续费叠加3次套餐（建议续费时谨慎选择套餐）。<br>4.套餐用完即停机，下个月不会默认使用上个月的套餐而继续扣费，安全省心。</p>
+						</li>
+						<li>
+							<p>四、如何发送短信和查看短信记录？<br>答：首先咨询售后人员确认您购买的卡有无短信模块（按照类型不同）。<br>确认之后也有两种方式发送短信：通过公众号中的“短信功能”发送短信，或自主开发接口后，调用接口发送短信。</p>
+			                <p>五、那么多流量套餐都有什么区别？<br>答：包年，半年，季度，月包套餐只是有效期不同，本质上没有区别。<br>当同时使用多个套餐时，首先除结算日最近的套餐中的流量，例如，同时使用3月10日结束的6G半年套餐与3月15日结束的3G当月套餐，会优先扣除6G半年套餐中的流量。</p>
+			                <p>六、流量卡与手机卡有什么区别？<br>答：从硬件方面来说，可以将流量卡看做没有短信（一些种类的流量卡也有短信功能）和语音功能的手机卡。而且相当一部分的流量卡号是13位，不同于手机卡的11位。<br>
+			                </p>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-list">
+					<ul>
+						<li>
+								  <p>一.无法收到短信？<br>
+				                    答：首先请确认该类型的卡片具有短信功能。<br>
+				                    设备正常开机的状态下无法收发短信时，可以通过一部安卓手机检测卡片是否正常工作：<br>
+				                    1、将物联网卡插入手机上进行测试(如果是贴片卡则需要将管脚与手机sim卡槽触点相对应)。<br>
+				                    2、通过公众号提供的短信发送功能，向物联网卡发送短信。<br>
+				                    3、通过在公众号上查询发送短信是否成功。同时查看手机是否接收到短信，能收到短信，卡片状态正常。那么原设备无法接收短信可能是设备故障或设备接收信号弱的原因。<br>
+				                    4、在经过以上排查流程后手机仍然无法接收短信则可能是其它原因，如：卡片未开通短信端口、卡片未受理短信功能、手机未添加短信白名单等均有可能导致无法收发短信。</p>
+						</li>
+						<li>
+						  	<p>二.无法上网？<br>
+			                    答：1.检查是否流量用完。<br>
+			                    2.检查设备网络接入点，设置参数为CMMTM（使用2G网络）/ CMIOT（使用4G网络）。<br>
+			                    3.还不能解决的话，可以通过手机检测卡片是否正常工作。首先，将卡片插入一部安卓系统的手机，开机，判断能否自动识别卡片；参照前文更改网络接入点，
+			                    然后，用手机访问网站，如百度。如果手机能够正常浏览网站则卡片正常，原设备不识别卡片或无法连接网络可能是设备接入点设置问题、设备信号弱、设备故障等原因</p>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-list">
+					<ul>
+						<li>
+							<p>一、怎样查看流量卡号码？<br>
+			                    答：每张卡都有唯一的sim卡号和iccid号，直接查看卡套上的11或13位号码，这是卡的sim卡号。卡板上的20位含字母的号码是卡的iccid号。</p>
+			                <p>二、怎么知道卡的有效期？<br>
+			                    答：未激活的卡，一般有6个月的静默期，6个月之后自动激活，开始扣费；<br>
+			                    激活后的卡，连续三个月停止使用，移动会把卡注销。<br>
+			                    4G卡与2G卡不同，详情请联系我们进行咨询。
+			                </p>
+						</li>
+						<li>
+							<p>三、在哪里查看卡片详细信息？<br>
+			                答：可以登录pc端的华正物联网卡管理平台查看，或者调用接口查看。获取接口文档请与业务经理联系。</p>
+			                <p>四、如何查看设备回复的短信？<br>
+			                    答：若使用公众号【中移物联网卡】中的功能发送短信，则公众号会推送提醒短信回复。若使用接口发送短信，则不会主动提醒，需查询记录才可看到。</p>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-list">
+					<div class="kefu">
+						<p>以上问答有没有解决您的问题？</p>
+		                <p>如果没有，请联系我们客服人员！</p>
+		                <p>服务专线：0755-89979072</p>
+					</div>
+				</div>
+	  		</div>
+	  	</div>
+		<footer>
+		    <div class="footer-details">
+		      <div class="footer-details-list">
+		        <ul>
+		          <li>
+		          <a href="#">公司简介</a>
+		          <a href="#">如何够买</a>
+		          <a href="#">公司活动</a>
+		          </li>
+		          <li>
+		            <a href="#">人才招聘</a>
+		            <a href="#">代理合作</a>
+		            <a href="#">产品咨询</a>
+		          </li>
+		          <li>
+		            <a href="#">联系我们</a>
+		            <a href="#">技术支持</a>
+		            <a href="#">媒体报道</a>
+		          </li>
+		          <li>
+		            <i class="glyphicon glyphicon-phone-alt"></i>
+		            <h1>客服热线</h1>
+		            <p>027-999999</p>
+		          </li>
+		          <div style="clear:both;"></div>
+		        </ul>
+		      </div>
+		    </div>
+		    <div class="footer-belongs">
+		      <ul>
+		        <li>© 2012-2017 深圳市华正信息服务有限公司</li>
+		        <li>For support or questions please email us at anthonyzhang0929@gmail.com.</li>
+		        <div style="clear:both;"></div>
+		      </ul>
+		    </div>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script> 
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$(".wrapper .content .content-nav li").on('click',function (e) {
+		        $(".wrapper .content .content-nav li").removeClass("active");
+		        var index = $(".wrapper .content .content-nav li").index($(this));
+		        $(".wrapper .content .content-nav li").eq(index).addClass("active");
+		        $(".wrapper .content .nav-list").removeClass("on");
+		        $(".wrapper .content .nav-list").eq(index).addClass("on");
+			})
+		})
+	</script>
+</body>
+</html>
