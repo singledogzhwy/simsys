@@ -42,4 +42,11 @@ $(function () {
         $(".wrapper .content-btn .login-btn").removeClass("on");
         $(".wrapper .content-btn .login-btn").eq(index).addClass("on");
 	})
+	$(".wrapper .content .content-nav li").on('click',function (e) {
+		        $(".wrapper .content .content-nav li").removeClass("active");
+		        var index = $(".wrapper .content .content-nav li").index($(this));
+		        $(".wrapper .content .content-nav li").eq(index).addClass("active");
+		        $(".wrapper .content .nav-list").removeClass("on");
+		        $(".wrapper .content .nav-list").eq(index).addClass("on");
+	})
 })

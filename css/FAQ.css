@@ -9,6 +9,14 @@
 	margin: 0 auto;
 	padding: 50px 0;
 }
+.wrapper .content .container .content-title {
+	margin-bottom:50px;
+	text-align: center;
+}
+.wrapper .content .container .content-title h1 {
+	font-size: 25px;
+	font-weight: 700;
+}
 .container .content-nav {
 	max-width: 900px;
 	margin: 0 auto;
@@ -75,5 +83,8 @@
 		width: 90%;
 		margin: 0 auto;
 		margin-bottom: 20px;
+	}
+	.container .content-nav ul li {
+		font-size: 14px;
 	}
 }

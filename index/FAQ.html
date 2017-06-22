@@ -5,16 +5,16 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>FAQ常见问题</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/FAQ.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/FAQ.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header id="header">
 	          <div class="header-content clearfix">
-	            <div class="logo"><img src="images/logo.png"></div>
+	            <div class="logo"><img src="../images/logo.png"></div>
 	            <nav class="navigation" role="navigation">
 	              <ul class="primary-nav">
 	                <li><a href="businessintro.html">公司业务</a></li>
@@ -29,9 +29,11 @@
 	            <a href="#" class="nav-toggle">Menu<span></span></a>
 	          </div>
 	  	</header>
-	  	<!-- <span class="blank"></span> -->
 	  	<div class="content">
 	  		<div class="container">
+	  			<div class="content-title">
+	  				<h1>常见售后问题汇总</h1>
+	  			</div>
 	  			<div class="content-nav">
 					<ul>
 						<li class="active">基础问题答疑</li>
@@ -141,18 +143,7 @@
 		    </div>
 		</footer>
 	</div>
-	<script src="js/jquery.min.js"></script> 
-	<script src="js/main.js"></script>
-	<script type="text/javascript">
-		$(function () {
-			$(".wrapper .content .content-nav li").on('click',function (e) {
-		        $(".wrapper .content .content-nav li").removeClass("active");
-		        var index = $(".wrapper .content .content-nav li").index($(this));
-		        $(".wrapper .content .content-nav li").eq(index).addClass("active");
-		        $(".wrapper .content .nav-list").removeClass("on");
-		        $(".wrapper .content .nav-list").eq(index).addClass("on");
-			})
-		})
-	</script>
+	<script src="../js/jquery.min.js"></script> 
+	<script src="../js/main.js"></script>
 </body>
 </html>

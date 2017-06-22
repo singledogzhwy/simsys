@@ -19,20 +19,21 @@
 }
 .carousel-control {
 	position: absolute;
-	top: 46%;
+	top: 50%;
 	left: 15px;
 	width: 40px;
 	height: 40px;
-	margin-top: 0; 
+	transform: translate(0,-50%);
+	margin-top: 0;
 	font-size: 60px;
 	font-weight: 100;
-	line-height: 30px; 
-	color: #ffffff; 
+	line-height: 30px;
+	color: #ffffff;
 	text-align: center;
-	background: transparent; 
-	-webkit-border-radius: 23px; 
+	background: transparent;
+	-webkit-border-radius: 23px;
 	-moz-border-radius: 23px;
-	border-radius: 23px; 
+	border-radius: 23px;
 	opacity: 0.3;
 	filter: alpha(opacity=50);
 }
@@ -210,7 +211,7 @@
 	max-width: 100%;
 }
 .wrapper .content .partner {
-	background: url(../img/partner.png);
+	background: url(../images/partner.png);
 	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
@@ -242,27 +243,6 @@
 	text-align: center;
 	height: 170px;
 	border: 1px solid #f4f4ef;
-}
-.wrapper .content .partner .position-mask {
-	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: 15px;
-	width: 100%;
-	background: rgba(0,0,0,.7);
-	color: #fff;
-	height: 100%;
-	line-height: 100%;
-}
-.wrapper .content .partner img:hover + .position-mask {
-	display:inline-block;
-}
-.wrapper .content .partner .position-mask .mask-title p {
-	position:absolute;
-	top:50%;
-	right: 50%;
-	transform: translate(50%,-50%);
 }
 @media (max-width:1023px) {
 	.content .product-quality>ul>li {
