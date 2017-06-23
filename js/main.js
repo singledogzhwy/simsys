@@ -49,4 +49,18 @@ $(function () {
 		        $(".wrapper .content .nav-list").removeClass("on");
 		        $(".wrapper .content .nav-list").eq(index).addClass("on");
 	})
+	$(".to-top").on("click",
+    function() {
+        var a = 800;
+        var c = $(document).scrollTop(),
+        h = parseInt(a / 20),
+        v = c / h,
+        N = 0,
+        C = setInterval(function() {
+            N++,
+            $(document).scrollTop(c - v * N),
+            N == h && (clearInterval(C), $(document).scrollTop(0))
+        },
+        20)
+  	})
 })

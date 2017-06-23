@@ -286,6 +286,9 @@ section ul {
 	}
 }}
 /*footer*/
+.wrapper footer {
+	position: relative;
+}
 .wrapper .footer-details {
 	display: block;	
 	background: #333;
@@ -355,4 +358,32 @@ section ul {
 }
 .wrapper .footer-belongs ul>li:nth-child(1) {
 	margin-right: 20px;
+}
+.wrapper .footer-belongs ul>li {
+	display: inline-block;
+}
+.wrapper .footer-belongs ul>li:nth-child(1) {
+	margin-right: 20px;
+}
+.wrapper .to-top {
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	color: #fff;
+	width: 34px;
+	height: 36px;
+	top: 30px;
+	font-size: 25px;
+	text-align: center;
+	background: #636564;
+	border-radius: 3px 0 0 3px;
+	-webkit-transition: background .2s linear;
+	transition: background .2s linear;
+}
+.glyphicon {
+	font-size: 20px;
+	line-height: 36px !important;
+}
+.glyphicon:hover {
+	color: red;
 }
