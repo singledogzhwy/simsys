@@ -41,7 +41,7 @@ namespace HZ.Web
             string txtUserPwd = Request.Form["txtUserPwd"];
 
            
-                string str = "server=.;database=HUAZHRNG;uid=ab;pwd=123;Trusted_Connection=no";
+                string str = "server=.;database=HuaZheng;uid=sa;pwd=123;Trusted_Connection=no";
                 Cn = new SqlConnection(str);
                 Cn.Open();
 
