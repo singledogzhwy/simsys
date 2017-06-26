@@ -75,8 +75,16 @@ namespace HZ.Web
                 }
                 else
                 {
+                    if (txtUserName == null)
+                    {
+                        txtUserName = "";
+                    }
+                    else
+                    {
+                        Response.Write("<script>alert('用户名输入错误！')</script>");
 
-                    Response.Write("<script>alert('用户名输入错误！')</script>");
+                    }
+                  
                 }
           
         }
