@@ -37,7 +37,7 @@
                 <button type="submit" class="am-btn" id="loginBtn" runat="server">登录</button>
             </div>
             <div class="form-group"><a href="#">忘记密码？</a></div>
-          </from>
+          </form>
         </div>
         <div class="login-btn">
           <form method="post" action="Logincheck.js">
@@ -47,11 +47,11 @@
               <div class="form-group">
                 <button type="button" class="am-btn" id="submitBtn" runat="server">查询</button>
                 <!-- ngSwitchWhen: failed -->
-                <p ng-switch-when="failed" class="ng-binding ng-scope" id="failedSearch" style="display:none;">无此号码或者无权限查看</p>
-                <p ng-switch-when="failed" class="ng-binding ng-scope" id="notextSearch" style="display:none">请输入号码查询</p>
+                <p  class="ng-binding ng-scope" id="failedSearch" style="display:none;">无此号码或者无权限查看</p>
+                <p  class="ng-binding ng-scope" id="notextSearch" style="display:none">请输入号码查询</p>
                 <!-- ngSwitchWhen: loading -->
               </div>
-          </from>
+          </form>
         </div>
       </div>
     </div>
