@@ -28,9 +28,7 @@
 			</label>
 				<button type="submit"><i class="Hui-iconfont search">&#xe665;</i>搜索</button>
 		</div>
-		<div class="card-content">
-			<div class="screen-btn">
-				<div class="btn-total">
+		<div class="btn-total">
 					<div class="btn-details" >
 							<button type="button" class="form-group btn screen"><i class="Hui-iconfont">&#xe6c0;</i>详细筛选</button>
 							<ul class="popups">
@@ -105,11 +103,13 @@
 							</ul>
 					</div>
 					<span class="btn-right">共有数据66条</span>
-				</div>
+		</div>
+		<div class="card-content">
+			<div class="screen-btn" style="width:100%;overflow:auto;">
 				<div class="tabel-list">
 					<table>
 						<thead class="thead-text">
-							<tr class="tr-text">
+							<tr class="th-text">
 								<th><input type="checkbox" value="全选">全选</th>
 								<th>id</th>
 								<th>套餐类型</th>
@@ -127,7 +127,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>1</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -143,7 +143,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>2</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -159,7 +159,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>3</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -175,7 +175,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>4</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -191,7 +191,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>5</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -207,7 +207,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>6</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -223,7 +223,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>7</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -239,7 +239,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>8</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -255,7 +255,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>9</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -271,7 +271,7 @@
 						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
-								<td>10</td>
+								<td></td>
 								<td>1G月卡</td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
@@ -292,7 +292,7 @@
 <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
 <script>
 	$(function(){
-        $(".btn").click(function(){
+        $(".btn-details .btn").click(function(){
             var me = $(this);
             me.next(".btn-details ul").toggle();
             me.closest(".btn-details").siblings(".btn-details").find(".popups:visible").hide();
@@ -316,8 +316,14 @@
 		            }
 		        };
 		        $(".thead-text input[type=checkbox]").prop("checked", $(".tbody-text input[type=checkbox]").length == $(".tbody-text input[type=checkbox]:checked").length? true : false);
-		    });
-    });
+		});
+ 	})
+ 	$(function () {
+	   var len = $(".tbody-text .tr-text td:nth-child(2)");
+	    for(var i=0;i<len.length;i++){
+	    	len[i].innerHTML = (i+1).toString();
+	    }
+ 	})
 </script>
 </body>
 </html>

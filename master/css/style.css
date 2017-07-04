@@ -61,7 +61,7 @@
 	transform:rotate(180deg);
     -ms-transform:rotate(180deg); /* Internet Explorer 9*/
     -moz-transform:rotate(180deg); /* Firefox */
-    -webkit-transform:rotate(180deg); /* Safari ÃƒÂ¥Ã¢â‚¬â„¢Ã…â€™ Chrome */
+    -webkit-transform:rotate(180deg); /* Safari ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ Chrome */
     -o-transform:rotate(180deg); /* Opera */
     filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
@@ -87,10 +87,7 @@
   	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;	
 }
 .input-btn  {
-	/* margin-left: 20px; */
 	padding: 15px 0;
-	/* text-align: center; */
-	border-bottom: 1px solid #e2e2e2;
 }
 .input-btn label {
 	margin-right: 15px;
@@ -133,7 +130,7 @@
 	clear: both;
 }
 .btn-total {
-	padding: 10px 0;
+	padding-bottom: 10px;
 }
 .btn-details {
 	position: relative;
@@ -155,7 +152,7 @@
 	display: none;
 	width:300px;
 	background-color: #ffffff;
-	-moz-box-shadow: 0 6px 12px rgba(0,0,0,.175); /* è€çš„ Firefox */
+	-moz-box-shadow: 0 6px 12px rgba(0,0,0,.175); /* ÃƒÆ’Ã‚Â¨ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â§Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ Firefox */
 	box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	background-clip: padding-box;
 	margin: 2px 0 0;
@@ -199,11 +196,10 @@
 	line-height: 30px;
 }
 .tabel-list {
-	height: 600px;
+	height: 650px;
 	width: 1600px;
-	margin: 10px auto;
 	overflow: auto;
-	overflow: hidden;
+	margin: 10px auto;
 }
 .tabel-list table {
 	border-top: 1px solid #ddd;
@@ -211,10 +207,10 @@
 .tabel-list table .thead-text {
 	width: 100%;
 }
-.tr-text {
+.th-text th.tr-text {
 	border-right: 1px solid #ddd;
 }
-.tr-text th,.tr-text td{
+.th-text th, .tr-text th,.tr-text td{
 	text-align: center;
 	border-left: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
