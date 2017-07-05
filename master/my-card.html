@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/hz-min/hz.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="iconfont/iconfont.css" />
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<title>我的卡片</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
 		<i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 卡片管理 <span class="c-gray en">&gt;</span> 我的卡片 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px;margin-right: 20px;" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
 	</nav>
 	<div class="card">
-		<div class="input-btn ">
+		<div class="input-btn">
 			<label >
 				<span>所属用户：</span>
 				<select id="">
@@ -24,13 +25,16 @@
 				</select>
 			</label>
 			<label>
-				<span>卡号：</span><input type="text" class="form-group">
+				<span>卡号：</span>
+				<input type="text" class=" form-control">
 			</label>
-				<button type="submit"><i class="Hui-iconfont search">&#xe665;</i>搜索</button>
+			<label>
+				<button type="submit" class="form-control"><i class="Hui-iconfont search">&#xe665;</i>搜索</button>
+			</label>
 		</div>
 		<div class="btn-total">
 					<div class="btn-details" >
-							<button type="button" class="form-group btn screen"><i class="Hui-iconfont">&#xe6c0;</i>详细筛选</button>
+							<button type="button" class=" btn screen form-control"><i class="Hui-iconfont">&#xe6c0;</i>详细筛选</button>
 							<ul class="popups">
 								<li>
 									<span>开卡公司：</span>
@@ -67,7 +71,7 @@
 							</ul>
 					</div>
 					<div class="btn-details">
-						<button type="button" class="form-group btn attribute"><i class="Hui-iconfont">&#xe61d;</i>设置卡属性</button>
+						<button type="button" class="form-control btn attribute"><i class="Hui-iconfont">&#xe61d;</i>设置卡属性</button>
 							<ul class="popups">
 								<li>
 									<span>停开机状态：</span>
@@ -128,7 +132,7 @@
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
 								<td></td>
-								<td>1G月卡</td>
+								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
 								<td>停机</td>
@@ -287,9 +291,58 @@
 					</table>
 				</div>
 			</div>
+			<div class="sim-popup">
+				<h1>流量卡资料</h1>
+				<div class="sim-popup-content">
+					<ul>
+						<li><span><b>*</b>ICCID：</span><input type="text" value="89860043191396089780" class="form-control"></li>
+						<li><span><b>*</b>卡号：</span><input type="text" value="13430575737" class="form-control"></li>
+						<li>
+							<span>
+								<b>*</b>类型：</span>
+								<select class="form-control">
+									<option>标准卡</option>
+									<option>贴片IC卡</option>
+								</select>
+						</li>
+						<li>
+							<span>套餐类型：</span>
+							<select class="form-control" disabled="disabled">
+								<option>5元30M</option>
+							</select>
+						</li>
+						<li><span><b>*</b>初始面值：</span><input type="text" value="180.00" class="form-control"></li>
+						<li>
+							<span>初始套餐周期：</span>
+							<select class="form-control">
+								<option>10个月</option>
+								<option>20个月</option>
+								<option>24个月</option>
+							</select>
+						</li>
+						<li>
+							<span>短信：</span>
+							<select class="form-control">
+								<option>有</option>
+								<option>无</option>
+							</select>
+						</li>
+						<li><span><b>*</b>开卡时间：</span><input type="text" class="form-control"></li>
+						<li>
+							<span>卡源：</span>
+							<select class="form-control">
+								<option>Mobile_S1</option>
+								<option>Mobile_S2</option>
+								<option>Mobile_S3</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
 <script>
 	$(function(){
         $(".btn-details .btn").click(function(){
@@ -317,7 +370,25 @@
 		        };
 		        $(".thead-text input[type=checkbox]").prop("checked", $(".tbody-text input[type=checkbox]").length == $(".tbody-text input[type=checkbox]:checked").length? true : false);
 		});
- 	})
+		$(".sim-btn").on('click',function () {
+	        // $('body').css("position","fixed");
+			var mycontent = $(".sim-popup").html();
+	        layer.open({
+	        	 title: false
+	            ,className: 'sim-popup'
+	            ,style:"width:100%;"
+	            ,anim:"up"
+	            ,shade: 'background-color: rgba(0,0,0,.5)'
+	            ,content: mycontent
+	            ,btn: ['取消']
+	            ,yes: function(index){
+	             	location.reload();
+	              	layer.close(index);
+	              	// $('body').css("position","static");
+	            }
+			})
+ 		})
+	})
  	$(function () {
 	   var len = $(".tbody-text .tr-text td:nth-child(2)");
 	    for(var i=0;i<len.length;i++){
