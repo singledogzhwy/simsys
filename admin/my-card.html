@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 	<meta http-equiv="Cache-Control" content="no-siteapp" />
-	<link rel="stylesheet" href="css/hz-min/hz.min.css" />
+	<link rel="stylesheet" href="css/reset/reset.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="iconfont/iconfont.css" />
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
@@ -12,7 +12,12 @@
 </head>
 <body>
 	<nav class="breadcrumb">
-		<i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 卡片管理 <span class="c-gray en">&gt;</span> 我的卡片 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px;margin-right: 20px;" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+		<i class="Hui-iconfont" style="color:#999;">&#xe67f;</i> 首页
+		<span>&gt;</span>卡片管理
+		<span>&gt;</span>我的卡片
+		<a class="btn btn-success radius r" href="javascript:location.replace(location.href);" title="刷新" >
+		  	<i class="Hui-iconfont">&#xe68f;</i>
+		</a>
 	</nav>
 	<div class="card">
 		<div class="input-btn">
@@ -291,7 +296,7 @@
 					</table>
 				</div>
 			</div>
-			<div class="sim-popup">
+			<div class="sim-popup" style="display: none;">
 				<h1>流量卡资料</h1>
 				<div class="sim-popup-content">
 					<ul>

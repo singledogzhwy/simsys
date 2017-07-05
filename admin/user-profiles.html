@@ -1,0 +1,69 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+	<script src="js/ztree/jquery.ztree.core.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var setting = {
+                view: {
+                    dblClickExpand: false,
+                    showLine: true,
+                    selectedMulti: false,
+                    fontCss: setFontCss
+                },
+                data: {
+                    simpleData: {
+                        enable: true,
+                        idKey: "id",
+                        pIdKey: "pId",
+                        rootPId: ""
+                    }
+                },
+                callback: {
+                    onClick: zTreeOnClick
+                }
+            };
+
+            function zTreeOnClick(event, treeId, treeNode) {
+
+                $("#inp").val("id="+treeNode.id + ", name=" + treeNode.name + ",pId=" + treeNode.pId);
+            };
+	        var zNodes = [
+	            { id: 1, pId: 0, name: "SIM卡管理中心" },
+	            { id: 11, pId: 1, name: "1分充" },
+	            { id: 12, pId: 1, name: "2G卡客户" },
+	            { id: 121, pId: 12, name: "2_小卡量" },
+	            { id: 1211, pId: 121, name: " 深圳诺格全球鹰(1)" },
+	            { id: 1212, pId: 121, name: "ewrr" },
+				{ id: 1213, pId: 121, name: "2_小卡量" },
+	            { id: 1214, pId: 121, name: "ewrr" },
+	            // { id: 12, pId: 1, name: "随意勾选 1-2" },
+	            // { id: 121, pId: 12, name: "随意勾选 1-2-1" },
+	            // { id: 122, pId: 12, name: "随意勾选 1-2-2" },
+	        ];
+            $(document).ready(function () {
+                // zNodes = $.fn.zTree.init($("#tree"), setting, zNodes);
+                var t =$("#tree");
+                zNodes =$.fn.zTree.init(t,setting,zNodes);
+            });
+            function setFontCss(treeId, treeNode) {
+				return treeNode.level == 2 ? {color:"red"} : {};
+			};
+        })
+
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <input type="text" id="inp" name='inp'  style=" width:300px"/>
+        <ul id="tree" class="ztree" ></ul>
+    </div>
+    </form>
+</body>
+</html>

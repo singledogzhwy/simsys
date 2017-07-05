@@ -14,12 +14,7 @@ h4{line-height:30px}
 .big-page .Hui-article-box,.big-page .dislpayArrow,.big-page .breadcrumb{left:0px}
 .big-page .Hui-aside{ left:-200px}
 .page-container{ padding:20px}
-@media (max-width: 767px) {
-	.page-container{ padding:15px}
-}
-/*组件*/
-
-/*导航*/
+@media (max-width: 767px) {.page-container{ padding:15px}}
 #Hui-nav > ul > li{ font-weight:normal}
 @media (max-width: 767px) {
 	#Hui-nav{display: block; top: 0; left: 65px; right: 65px}
@@ -29,11 +24,11 @@ h4{line-height:30px}
 }
 #Hui-userbar{right:20px; position:absolute; top:0;}
 #Hui-userbar > ul > li > a{padding:0 10px}
-
-#Hui-msg .badge{ position:absolute; left:19px; top:4px; font-size:12px; font-weight:normal; padding:1px 5px}
+#Hui-msg .pos-msg {position: relative;}
+#Hui-msg .badge{position:absolute;top: -20px;font-size: 14px;color: red;width: 20px;margin-top: 5px;font-weight: 700;}
 /*左侧菜单*/
 .Hui-aside .menu_dropdown dl{ margin-bottom:0}
-.Hui-aside .menu_dropdown dt{display:block;line-height:35px;padding-left:15px;cursor:pointer;position:relative;border-bottom: 1px solid #e5e5e5;font-weight:normal}
+.Hui-aside .menu_dropdown dt{display:block;line-height:35px;padding-left:15px;cursor:pointer;position:relative;border-bottom: 1px solid #e5e5e5;font-weight:normal;font-size: 14px;}
 .Hui-aside .menu_dropdown dt .menu_dropdown-arrow{ position:absolute;overflow: hidden; top:0; right:15px;transition-duration:0.3s ;transition-property:all}
 .Hui-aside .menu_dropdown dd{ display:none}
 .Hui-aside .menu_dropdown dt.selected .menu_dropdown-arrow{transform: rotate(180deg)}
@@ -44,7 +39,7 @@ h4{line-height:30px}
 .Hui-aside .menu_dropdown li a i{ font-weight: normal}
 .Hui-aside .menu_dropdown dd ul{padding:3px 8px}
 .Hui-aside .menu_dropdown dd li{line-height:32px}
-.Hui-aside .menu_dropdown dd li a{line-height:32px;padding-left:26px; border-bottom:none; font-weight:normal}
+.Hui-aside .menu_dropdown dd li a{line-height:32px;padding-left:26px;border-bottom:none;font-weight:normal;font-size: 14px;}
 .Hui-aside .menu_dropdown li a:hover{text-decoration:none}
 .Hui-aside .menu_dropdown li.current a,.menu_dropdown li.current a:hover{background-color:rgba(255,255,255,0.2)}
 /*菜单收缩切换*/
