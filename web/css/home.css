@@ -1,16 +1,16 @@
 .wrapper {
 	width: 100%;
 }
-.carousel
+.carousel 
 {
 	height: 530px;
 	margin-top: 95px;
 }
-.carousel .item
+.carousel .item 
 {
     height: 530px;
 }
-.carousel img
+.carousel img 
 {
     min-height: 530px;
 }
@@ -43,12 +43,7 @@
 	line-height: 30px;
 }
 @media (min-width: 768px) {
-	.container {
-		width: 	100% !important;
-		padding-right: 0 !important;
-		padding-left: 0 !important;
-	}
-	.carousel img
+	.carousel img 
 	{
 	    min-height: 530px;
 	}
@@ -60,19 +55,21 @@
 	}
 }
 .wrapper .content {
+	/* max-width: 1180px; */
 	margin: 0 auto;
 }
 
 .content .product-need {
+	/* max-width: 1200px; */
 	background: rgb(247,247,247);
 	padding: 50px 0;
 	text-align: center;
 }
 .content .product-need  h1 {
-	font-size: 25px;
+	font-size: 30px;
 	line-height: 25px;
 	font-weight: 400;
-	margin: 0 20px 30px 0;
+	margin: 0 20px 40px 0;
 }
 .content .product-need ul {
 	max-width: 1200px;
@@ -81,7 +78,6 @@
 .content .product-need ul> li {
 	display: inline-block;
 	width: 20%;
-	height: 200px;
 	text-align: center;
 	vertical-align: top;
 }
@@ -104,7 +100,7 @@
 	margin: 10px 20px 10px 20px;
 }
 .content .product-need  h2 {
-	margin: 30px 20px 30px 20px;
+	margin: 30px 20px;
 	line-height: 26px;
 }
 .content .product-need> a {
@@ -150,58 +146,8 @@
 	font-weight: 400;
 	margin: 0 20px 30px 0;
 }
-.content .product-quality>ul> {
-	display: flex;
-}
-.content .product-quality>ul {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-.content .product-quality>ul>li {
-	flex: 1;
-	display: inline-block;
-	height: 400px;
-	vertical-align: top;
-	width: 47%;
-}
-.content .product-quality>ul>li:nth-child(odd) {
-	margin-right: 2%;
-}
-.content .product-quality>ul>li:nth-child(even) {
-	margin-left: 2%;
-}
-.content .product-quality ul li>p {
-	line-height: 30px;
-	font-size: 20px;
-	margin-bottom: 25px;
-}
-.content .product-quality ul li>a {
-	background:#ccc;
-}
-.content .product-quality ul li>a {
-	display: block;
-	background: #ccc;
-	width: 200px;
-	color: #333;
-	padding: 10px 15px;
-	margin: 0 auto;
-	border-radius: 3px;
-	font-size: 20px;
-	cursor: pointer;
-	outline: none;
-	text-decoration: none;
-}
-.content .product-quality ul li> a:hover {
-	background: #2ecc71;
-	color: #fff;
-}
-.content .product-quality ul li>img {
-	border-radius: 4px;
-	max-height: 400px;
-	max-width: 100%;
-}
 .wrapper .content .partner {
-	background: url(../images/partner.png);
+	/* background: url(../images/partner.png); */
 	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
@@ -253,4 +199,10 @@
 		width: 100%;
 		display: block;
 	}
+}
+.product-need i {
+
+}
+.need-icon {
+
 }

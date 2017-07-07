@@ -1,0 +1,160 @@
+.scene {
+	padding: 50px 0;
+	margin: 0 auto;
+	background: #fdfdfd;
+}
+.scene ul {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.scene ul li {
+	width: 30%;
+	display: inline-block;
+	height: 500px;
+	border-radius: 5px;
+	border: 1px solid #f1f1f1;
+	margin-right: 3%;
+}
+
+.contact {
+	background: #333;
+	color: #fff;
+}
+.contact_title h1{
+	font-size: 25px;
+	color: #fff;
+	letter-spacing: 5px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.work_title img, .contact_title img{
+	margin-bottom: 30px;
+}
+.info-total {
+	margin-top: 50px;
+}
+.info-img img {
+	width: 150px;
+	height: 150px;
+}
+.single_contact_info{
+padding-bottom: 21px;
+}
+.single_contact_info h2{text-transform: uppercase;color: #fff;font-size: 18px;letter-spacing: 3px;margin-bottom: 1px;}
+.single_contact_info p{font-size: 15px;color: #999;}
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+}
+.contact-form{
+background-color: #f1f1f1;
+padding: 30px;
+}
+.contact-form .form-control{height: 30px;/* border-radius: 0px; */margin-bottom: 20px;border: 0px solid #fff;}
+.contact-form #message{
+	height: 75px;
+}
+.form_submit{
+width: 100%;
+background: #f73b56;
+border-radius: 0px;
+color: #fff;
+padding-top: 13px;
+padding-bottom: 10px;
+transition: all 1s;
+}
+.work-with {
+padding-bottom: 60px;
+padding-top: 10px;
+}
+.work-with h3{
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+@media (max-width: 768px) {
+	.info-total {
+		text-align: center;
+		margin: 20px 0;
+	}
+}
+.info-btn {
+	margin-bottom: 20px;
+}
+.product-advantage {
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px 0;
+}
+.product-advantage ul {
+	width: 100%;
+	font-size: 0;
+}
+.product-advantage li {
+	display: inline-block;
+	width: 25%;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: top;
+}
+.product-advantage i {
+	display: block;
+	font-size: 70px;
+	height: 180px;
+	width: 180px;
+	line-height: 180px !important;
+	margin: 0 auto;
+	border-radius: 90px;
+	text-align: center;
+}
+.product-advantage h1 {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+.product-advantage h3 {
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 20px;
+	color: #d0d0d0;
+}
+.product-advantage h2 {
+	margin: 40px 0 10px 0;
+}
+.product-advantage p {
+	margin-bottom: 20px;
+}
+.adv-icon-1 {
+	background: #fcce30;
+	color: #fff;
+}
+.adv-icon-2 {
+	background: #69bcf0;
+	color: #fff;
+}
+.adv-icon-3 {
+	background: #f4797b;
+	color: #fff;
+}
+.adv-icon-4 {
+	background: #8ed153;
+	color: #fff;
+}
+.product-need i {
+	display: block;
+	font-size: 70px;
+	height: 180px;
+	width: 180px;
+	line-height: 180px !important;
+	margin: 0 auto;
+	border-radius: 90px;
+	text-align: center;
+	color: #272636;
+}
+.need-icon {
+
+}

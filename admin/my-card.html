@@ -9,6 +9,12 @@
 	<link rel="stylesheet" href="iconfont/iconfont.css" />
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<title>我的卡片</title>
+	<style>
+		.altrow {
+			background: #ddd;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 	<nav class="breadcrumb">
@@ -133,7 +139,7 @@
 								<th>实名状态</th>
 							</tr>
 						</thead>
-						<tbody class="tbody-text">
+						<tbody class="tbody-text" id="oTable">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
 								<td></td>
@@ -148,12 +154,10 @@
 								<td>停机</td>
 								<td>实名</td>
 							</tr>
-						</tbody>
-						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
 								<td></td>
-								<td>1G月卡</td>
+								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
 								<td>停机</td>
@@ -164,12 +168,10 @@
 								<td>停机</td>
 								<td>实名</td>
 							</tr>
-						</tbody>
-						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
 								<td></td>
-								<td>1G月卡</td>
+								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
 								<td>停机</td>
@@ -180,12 +182,10 @@
 								<td>停机</td>
 								<td>实名</td>
 							</tr>
-						</tbody>
-						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
 								<td></td>
-								<td>1G月卡</td>
+								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
 								<td>停机</td>
@@ -196,12 +196,10 @@
 								<td>停机</td>
 								<td>实名</td>
 							</tr>
-						</tbody>
-						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
 								<td></td>
-								<td>1G月卡</td>
+								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
 								<td>停机</td>
@@ -212,12 +210,10 @@
 								<td>停机</td>
 								<td>实名</td>
 							</tr>
-						</tbody>
-						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
 								<td></td>
-								<td>1G月卡</td>
+								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
 								<td>停机</td>
@@ -228,60 +224,10 @@
 								<td>停机</td>
 								<td>实名</td>
 							</tr>
-						</tbody>
-						<tbody class="tbody-text">
 							<tr class="tr-text">
 								<th><input type="checkbox"></th>
 								<td></td>
-								<td>1G月卡</td>
-								<td>深圳华正信息有限公司</td>
-								<td>13000000000</td>
-								<td>停机</td>
-								<td>实名</td>
-								<td>1G月卡</td>
-								<td>深圳华正信息有限公司</td>
-								<td>13000000000</td>
-								<td>停机</td>
-								<td>实名</td>
-							</tr>
-						</tbody>
-						<tbody class="tbody-text">
-							<tr class="tr-text">
-								<th><input type="checkbox"></th>
-								<td></td>
-								<td>1G月卡</td>
-								<td>深圳华正信息有限公司</td>
-								<td>13000000000</td>
-								<td>停机</td>
-								<td>实名</td>
-								<td>1G月卡</td>
-								<td>深圳华正信息有限公司</td>
-								<td>13000000000</td>
-								<td>停机</td>
-								<td>实名</td>
-							</tr>
-						</tbody>
-						<tbody class="tbody-text">
-							<tr class="tr-text">
-								<th><input type="checkbox"></th>
-								<td></td>
-								<td>1G月卡</td>
-								<td>深圳华正信息有限公司</td>
-								<td>13000000000</td>
-								<td>停机</td>
-								<td>实名</td>
-								<td>1G月卡</td>
-								<td>深圳华正信息有限公司</td>
-								<td>13000000000</td>
-								<td>停机</td>
-								<td>实名</td>
-							</tr>
-						</tbody>
-						<tbody class="tbody-text">
-							<tr class="tr-text">
-								<th><input type="checkbox"></th>
-								<td></td>
-								<td>1G月卡</td>
+								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
 								<td>13000000000</td>
 								<td>停机</td>
@@ -400,6 +346,13 @@
 	    	len[i].innerHTML = (i+1).toString();
 	    }
  	})
+ 	window.onload = function(){
+ 		var oTable = document.getElementById("oTable");
+		for(var i=0;i<oTable.rows.length;i++){
+		if(i%2==0) //偶数行时
+		oTable.rows[i].className = "altrow";
+		}
+	}
 </script>
 </body>
 </html>

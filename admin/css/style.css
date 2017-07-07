@@ -223,10 +223,10 @@
 .tabel-list table .thead-text {
 	width: 100%;
 }
-.th-text th,.tr-text {
+.altrow th .th-text th,.tr-text {
 	border-right: 1px solid #ddd;
 }
-.th-text th, .tr-text th,.tr-text td{
+.th-text th, .tr-text th,.tr-text td,.altrow td{
 	text-align: center;
 	border-left: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
