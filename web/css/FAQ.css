@@ -1,9 +1,6 @@
 .wrapper {
 	width: 100%;
 }
-.wrapper .content {
-	padding-top: 100px;
-}
 .wrapper .content .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -46,6 +43,8 @@
 .nav-list {
 	display: none;
 	padding-top: 50px;
+	height: 450px;
+	overflow: auto;
 }
 .nav-list ul {
 	display: flex;
