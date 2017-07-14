@@ -135,13 +135,66 @@
 	color: #04a5fa;
 }
 /* business */
-.business-top {
+.business-content {
+	width: 100%;
 	margin: 0 auto;
+}
+.business-top {
 	background: #f0f0f0;
 	text-align: center;
 }
 .business-top img {
 	max-width: 1200px;
+	margin: 0 auto;
+}
+.business-details {
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 50px 0;
+}
+.business-details:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.business-details h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.business-patch{
+	float:left;
+	width:180px;
+	height:212px;
+	margin:20px;
+	padding:30px 20px;
+	background: #0058a7;
+	box-shadow: 1px 1px 1px 1px #999;
+	box-sizing: content-box;
+	border-radius: 5px;
+}
+.business-patch h2{
+	text-align:center;
+	color:#fff;
+	line-height:20px;
+	font-size:13px;
+}
+.business-patch .bus-pat-img{
+	width:60px;
+	height:60px;
+	margin: 0 auto;
+}
+.bus-pat-img img{
+	width: 100%;
+}
+.business-patch ul li{
+	color:#fff;
+	font-size:14px;
+	text-align:center;
+	line-height:24px;
+}
+@media screen {
+	
 }
 /* mintro */
 .mintro-content {

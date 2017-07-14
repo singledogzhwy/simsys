@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="iconfont/iconfont.css" />
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	 <link rel="stylesheet" href="css/layui/layui.css"  media="all">
 	<title>我的卡片</title>
 	<style>
 		.altrow {
@@ -75,6 +76,10 @@
 										<option>开卡公司</option>
 										<option>开卡公司</option>
 									</select>
+								</li>
+								<li>
+									<span>选择日期：</span>
+									<input class="layui-input laydate-icon form-control date" placeholder="自定义日期格式" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" class="">
 								</li>
 								<li class="last">
 									<button type="button" class="search search-btn"><i class="	Hui-iconfont">&#xe665;</i>查询</button>
@@ -294,6 +299,7 @@
 	</div>
 <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript" src="js/layui/layui.js" ></script>
 <script>
 	$(function(){
         $(".btn-details .btn").click(function(){
@@ -353,6 +359,26 @@
 		oTable.rows[i].className = "altrow";
 		}
 	}
+	layui.use('laydate', function(){
+	  var laydate = layui.laydate;
+	  var start = {
+	    min: laydate.now()
+	    ,max: '2099-06-16 23:59:59'
+	    ,istoday: false
+	    ,choose: function(datas){
+	      end.min = datas;
+	      end.start = datas;
+	    }
+	  };
+	  var end = {
+	    min: laydate.now()
+	    ,max: '2099-06-16 23:59:59'
+	    ,istoday: false
+	    ,choose: function(datas){
+	      start.max = datas; //结束日选好后，重置开始日的最大日期
+	    }
+	  };
+	});
 </script>
 </body>
 </html>
