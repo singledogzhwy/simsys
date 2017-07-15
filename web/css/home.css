@@ -1,16 +1,16 @@
 .wrapper {
 	width: 100%;
 }
-.carousel 
+.carousel
 {
 	height: 530px;
 	margin-top: 95px;
 }
-.carousel .item 
+.carousel .item
 {
     height: 530px;
 }
-.carousel img 
+.carousel img
 {
     min-height: 530px;
 }
@@ -43,7 +43,7 @@
 	line-height: 30px;
 }
 @media (min-width: 768px) {
-	.carousel img 
+	.carousel img
 	{
 	    min-height: 530px;
 	}
@@ -204,9 +204,15 @@
 	}
 }
 @media (max-width:414px) {
+	.wrapper .content .partner {
+		height:auto;
+	}
 	.wrapper .content .partner ul li {
 		width: 100%;
 		display: block;
+	}
+	.wrapper .to-top {
+		top: -65px;
 	}
 }
 .product-need i {
