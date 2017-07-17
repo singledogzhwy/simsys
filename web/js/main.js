@@ -28,7 +28,7 @@ $(document).ready(function() {
 		$(this).toggleClass('close-nav');
 		nav.toggleClass('open');
 		return false;
-	});	
+	});
 	nav.find('a').on('click', function() {
 		$('.nav-toggle').toggleClass('close-nav');
 		nav.toggleClass('open');
@@ -49,18 +49,26 @@ $(function () {
 		        $(".wrapper .content .nav-list").removeClass("on");
 		        $(".wrapper .content .nav-list").eq(index).addClass("on");
 	})
+	$(".wrapper .mintro-content .platform-1-nav li").on('click',function (e) {
+        $(".wrapper .mintro-content .platform-1-nav li").removeClass("check");
+        var index = $(".wrapper .mintro-content .platform-1-nav li").index($(this));
+        $(".wrapper .mintro-content .platform-1-nav li").eq(index).addClass("check");
+        $(".wrapper .mintro-content .platform-1-list").removeClass("on");
+        $(".wrapper .mintro-content .platform-1-list").eq(index).addClass("on");
+    })
 	$(".to-top").on("click",
-    function() {
-        var a = 800;
-        var c = $(document).scrollTop(),
-        h = parseInt(a / 20),
-        v = c / h,
-        N = 0,
-        C = setInterval(function() {
-            N++,
-            $(document).scrollTop(c - v * N),
-            N == h && (clearInterval(C), $(document).scrollTop(0))
-        },
-        20)
-  	})
+	    function() {
+	        var a = 800;
+	        var c = $(document).scrollTop(),
+	        h = parseInt(a / 20),
+	        v = c / h,
+	        N = 0,
+	        C = setInterval(function() {
+	            N++,
+	            $(document).scrollTop(c - v * N),
+	            N == h && (clearInterval(C), $(document).scrollTop(0))
+	        },
+	        20)
+	})
+
 })

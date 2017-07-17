@@ -6,6 +6,9 @@
 	height: 530px;
 	margin-top: 95px;
 }
+.carousel-inner {
+	position: relative;
+}
 .carousel .item
 {
     height: 530px;
@@ -14,8 +17,27 @@
 {
     min-height: 530px;
 }
-.carousel-inner {
-	position: relative;
+.carousel .item .item-title-1 {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	font-size: 48px;
+	color: #fff;
+	transform: translate(-50%,-50%);
+}
+.carousel .item .item-title-2 {
+	position: absolute;
+	text-align: center;
+	top: 65%;
+	right: 3%;
+	transform: translate(-3%,-65%);
+	font-size: 48px;
+	color: #333;
+}
+.carousel .item .item-title-1 h1,
+.carousel .item .item-title-2 h1 {
+	margin-bottom: 20px;
 }
 .carousel-control {
 	position: absolute;
@@ -52,6 +74,14 @@
 	}
 	.login-box form {
 		min-width: 390px;
+	}
+}
+@media (max-width: 1320px) {
+	.carousel .item .item-title-1 {
+		font-size: 30px;
+	}
+	.carousel .item .item-title-2 {
+		font-size: 30px;
 	}
 }
 .wrapper .content {
@@ -155,7 +185,7 @@
 	margin: 0 20px 30px 0;
 }
 .wrapper .content .partner {
-	/* background: url(../images/partner.png); */
+	background: url(../images/partner.png);
 	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
@@ -214,10 +244,4 @@
 	.wrapper .to-top {
 		top: -65px;
 	}
-}
-.product-need i {
-
-}
-.need-icon {
-
 }
