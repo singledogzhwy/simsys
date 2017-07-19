@@ -307,8 +307,8 @@
             var me = $(this);
             me.next(".btn-details .popups").toggle();
             me.closest(".btn-details").siblings(".btn-details").find(".popups:visible").hide();
-             me.parents().siblings(".btn-details").find(".popups:visible").hide();
-             $("#page_mask").css("display","block");
+            me.parents().siblings(".btn-details").find(".popups:visible").hide();
+            $("#page_mask").css("display","block");
         });
 		$(".search-btn").click(function(){
 			$(".btn-details .popups").css("display","none");
@@ -334,7 +334,6 @@
 		        $(".thead-text input[type=checkbox]").prop("checked", $(".tbody-text input[type=checkbox]").length == $(".tbody-text input[type=checkbox]:checked").length? true : false);
 		});
 		$(".sim-btn").on('click',function () {
-	        // $('body').css("position","fixed");
 			var mycontent = $(".sim-popup").html();
 	        layer.open({
 	        	 title: false

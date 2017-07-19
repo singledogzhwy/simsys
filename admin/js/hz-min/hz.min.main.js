@@ -208,7 +208,7 @@
 	    })
 	    $(function () {
 			$(".more .down-more").click(function(){
-				$("#line2").slideToggle();
+				$("#line2").slideToggle("slow");
 				if($(this).find(".menu-icon").hasClass("menu-down")){
 					$(this).find(".menu-icon").removeClass("menu-down");
 				}

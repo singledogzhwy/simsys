@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<title>弹出</title>
 	<link rel="stylesheet" href="css/reset/reset.css">
-	<link rel="stylesheet" href="css/style.css">
 	 <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
 </head>
 <body>
 	<div class="new-add">
@@ -56,5 +57,44 @@
 				</div>
 		</div>
 	</div>
+	<div class="new-add-btn">
+		<button class="form-control move"><i class="Hui-iconfont">&#xe645;</i>移动</button>
+		<button class="form-control del"><i class="Hui-iconfont">&#xe6e2;</i>删除</button>
+		<button class="form-control add"><i class="Hui-iconfont">&#xe604;</i>新增</button>
+  		<input class="layui-input form-control start-date" placeholder="开始日" id="LAY_demorange_s">
+  		<input class="layui-input form-control end-date" placeholder="截止日" id="LAY_demorange_e">
+	</div>
+	<script type="text/javascript" src="js/layui/layui.js" ></script>
+	<script>
+	layui.use('laydate', function(){
+	  var laydate = layui.laydate;
+	  var start = {
+	    min: laydate.now()
+	    ,max: '2099-06-16 23:59:59'
+	    ,istoday: false
+	    ,choose: function(datas){
+	      end.min = datas;
+	      end.start = datas
+	    }
+	  };
+	  var end = {
+	    min: laydate.now()
+	    ,max: '2099-06-16 23:59:59'
+	    ,istoday: false
+	    ,choose: function(datas){
+	      start.max = datas;
+	    }
+	  };
+
+	  document.getElementById('LAY_demorange_s').onclick = function(){
+	    start.elem = this;
+	    laydate(start);
+	  }
+	  document.getElementById('LAY_demorange_e').onclick = function(){
+	    end.elem = this
+	    laydate(end);
+	  }
+});
+</script>
 </body>
 </html>

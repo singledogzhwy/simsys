@@ -154,7 +154,7 @@
 	z-index: 999;
 }
 .screen{
-	background-color: #dd514c !important;
+	background: #dd514c !important;
 	color: #fff !important;
 	border-color: #dd514c !important;
 }
@@ -235,7 +235,7 @@
 .altrow th .th-text th,.tr-text {
 	border-right: 1px solid #ddd;
 }
-.th-text th, .tr-text th,.tr-text td,.altrow td{
+.th-text th, .tr-text th,.tr-text td,.altrow td, .altrow th {
 	text-align: center;
 	border-left: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
@@ -315,7 +315,7 @@
 	text-align: center !important;
 	padding:10px 0 !important;
 }
-/* new-add*/
+/* 2.html new-add*/
 .new-add {
 	width: 630px !important;
 	margin: 0 auto;
@@ -331,6 +331,26 @@
 	width: 85px !important;
 	margin: 0 5%;
 }
+.new-add-btn {
+	margin: 0 auto;
+	text-align: center;
+}
+.move,.del,.add {
+	width: 80px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 15px;
+}
+.new-add-btn .Hui-iconfont {
+	color: #555;
+	margin-right: 5px;
+}
+.start-date ,.end-date {
+	display: inline-block;
+	width: 150px;
+	margin-left: 10px;
+	height: 30px;
+}
 /* user-profiles*/
 .user-profiles {
 	width: 100%;
@@ -341,7 +361,7 @@
 	top: 0px;
 	right: 0;
 	bottom: 0;
-	background: #fff;
+	background: #ebeff2;
 	padding-top: 10px;
 	width: 300px;
 	border-left: 1px solid #ebeff2;
