@@ -35,13 +35,7 @@ $(document).ready(function() {
 	});
 });
 $(function () {
-	$(".wrapper .content-btn .log-query-btn li").on('click',function (e) {
-        $(".wrapper .content-btn .log-query-btn li").removeClass("active");
-        var index = $(".wrapper .content-btn .log-query-btn li").index($(this));
-        $(".wrapper .content-btn .log-query-btn li").eq(index).addClass("active");
-        $(".wrapper .content-btn .login-btn").removeClass("on");
-        $(".wrapper .content-btn .login-btn").eq(index).addClass("on");
-	})
+	
 	$(".wrapper .content .content-nav li").on('click',function (e) {
 		        $(".wrapper .content .content-nav li").removeClass("active");
 		        var index = $(".wrapper .content .content-nav li").index($(this));
@@ -70,5 +64,17 @@ $(function () {
 	        },
 	        20)
 	})
-
+})
+$(function () {
+	var urlstr = location.href;
+		// alert((urlstr + '/').indexOf($(this).attr('href')));
+		var urlstatus=false;
+		$("#header .navigation .primary-nav a").each(function () {
+		if ((urlstr + '/').indexOf($(this).attr('href')) > -1&&$(this).attr('href')!='') {
+		  	$(this).addClass('cur'); urlstatus = true;
+		} else {
+		  $(this).removeClass('cur');
+		}
+		});
+		if (!urlstatus) {$("#menu a").eq(0).addClass('cur'); }
 })

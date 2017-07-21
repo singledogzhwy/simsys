@@ -69,8 +69,8 @@
 	layui.use('laydate', function(){
 	  var laydate = layui.laydate;
 	  var start = {
-	    min: laydate.now()
-	    ,max: '2099-06-16 23:59:59'
+	    // min: laydate.now()
+	    max: '2099-06-16 23:59:59'
 	    ,istoday: false
 	    ,choose: function(datas){
 	      end.min = datas;
@@ -78,7 +78,7 @@
 	    }
 	  };
 	  var end = {
-	    min: laydate.now()
+    	min: laydate.now()
 	    ,max: '2099-06-16 23:59:59'
 	    ,istoday: false
 	    ,choose: function(datas){

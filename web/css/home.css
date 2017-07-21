@@ -16,6 +16,7 @@
 .carousel img
 {
     min-height: 530px;
+    width: 100%;
 }
 .carousel .item .item-title-1 {
 	position: absolute;
@@ -130,14 +131,16 @@
 	margin: 10px 20px 10px 20px;
 }
 .content .product-need  h2 {
-	margin: 30px 20px;
+	margin: 40px 20px;
 	line-height: 26px;
+	font-size: 24px;
+	font-weight: 100;
 }
 .content .product-need> a {
 	display: block;
-	background: #ccc;
+	background: #2ecc71;
 	width: 200px;
-	color: #333;
+	color: #fff;
 	padding: 10px 15px;
 	margin: 0 auto;
 	border-radius: 3px;
@@ -148,7 +151,7 @@
 }
 .content .product-need> a:hover {
 	background: #2ecc71;
-	color: #fff;
+	color: #cccccc;
 }
 @media (max-width: 1023px) {
 	.content .product-need ul> li {

@@ -332,16 +332,16 @@
 	margin: 0 5%;
 }
 .new-add-btn {
-	margin: 0 auto;
-	text-align: center;
+	margin: 0 10px;
+	padding: 10px;
 }
 .move,.del,.add {
 	width: 80px;
-	height: 30px;
 	display: inline-block;
-	margin-right: 15px;
+	margin-left: 15px;
+	vertical-align: top;
 }
-.new-add-btn .Hui-iconfont {
+.move .Hui-iconfont,.del .Hui-iconfont,.add .Hui-iconfont  {
 	color: #555;
 	margin-right: 5px;
 }
@@ -374,7 +374,6 @@
 	width: 280px;
 }
 .ztree-total {
-
 }
 #page_mask {
     width: 100%;

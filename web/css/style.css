@@ -108,10 +108,12 @@
 	background: red;
 }
 
-/* about */
-.about-content {
-	margin-top: 100px;
+/* common */
+.top-content-img {
+	width: 100%;
+	padding-top: 100px;
 }
+/* about */
 .about-content>ul {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -244,7 +246,6 @@
 	display: block;
 	width: 100%;
 	max-width: 1200px;
-	height: 500px;
 	margin: 0 auto;
 }
 .mintro-banner .platform-1 {
@@ -344,6 +345,21 @@
 	padding-top: 50px;
 	width: 100%;
 }
+@media (max-width: 767px) {
+	.contact-container ul {
+		display: block;
+	}
+	.contact-container ul li {
+		display:block;
+		padding: 15px 0;
+	}
+}
+.contact-container li {
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid #ddd;
+}
+}
 /* contact */
 .apiintro-content {
 
@@ -395,7 +411,7 @@
 .nav-list {
 	display: none;
 	padding-top: 50px;
-	height: 450px;
+	height: 500px;
 	overflow: auto;
 }
 .nav-list ul {
@@ -403,7 +419,7 @@
 }
 .nav-list ul li {
 	flex: 1;
-	font-size: 18px;
+	font-size: 16px;
 }
 .nav-list ul li p {
 	padding: 0 15px;
@@ -440,3 +456,6 @@
 		font-size: 14px;
 	}
 }
+	.cur {
+		border-bottom: 2px solid #1bc863;
+	}
