@@ -150,7 +150,7 @@
 						</thead>
 						<tbody class="tbody-text" id="oTable">
 							<tr class="tr-text">
-								<th><input type="checkbox"></th>
+								<th><input type="checkbox" name="int" name="int"></th>
 								<td></td>
 								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
@@ -164,7 +164,7 @@
 								<td>实名</td>
 							</tr>
 							<tr class="tr-text">
-								<th><input type="checkbox"></th>
+								<th><input type="checkbox" name="int"></th>
 								<td></td>
 								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
@@ -178,7 +178,7 @@
 								<td>实名</td>
 							</tr>
 							<tr class="tr-text">
-								<th><input type="checkbox"></th>
+								<th><input type="checkbox" name="int"></th>
 								<td></td>
 								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
@@ -192,7 +192,7 @@
 								<td>实名</td>
 							</tr>
 							<tr class="tr-text">
-								<th><input type="checkbox"></th>
+								<th><input type="checkbox" name="int"></th>
 								<td></td>
 								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
@@ -206,7 +206,7 @@
 								<td>实名</td>
 							</tr>
 							<tr class="tr-text">
-								<th><input type="checkbox"></th>
+								<th><input type="checkbox" name="int"></th>
 								<td></td>
 								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
@@ -220,7 +220,7 @@
 								<td>实名</td>
 							</tr>
 							<tr class="tr-text">
-								<th><input type="checkbox"></th>
+								<th><input type="checkbox" name="int"></th>
 								<td></td>
 								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
@@ -234,7 +234,7 @@
 								<td>实名</td>
 							</tr>
 							<tr class="tr-text">
-								<th><input type="checkbox"></th>
+								<th><input type="checkbox" name="int"></th>
 								<td></td>
 								<td><a href="#" class="sim-btn" style="color:red;">1G月卡</a></td>
 								<td>深圳华正信息有限公司</td>
@@ -336,6 +336,12 @@
 		        };
 		        $(".thead-text input[type=checkbox]").prop("checked", $(".tbody-text input[type=checkbox]").length == $(".tbody-text input[type=checkbox]:checked").length? true : false);
 		});
+		$(".del").click(function () {
+	        $("input[name='int']:checked").each(function() { // 遍历选中的checkbox
+	            n = $(this).parents("tr").index();  // 获取checkbox所在行的顺序
+	            $(".tbody-text").find("tr:eq("+n+")").remove();
+	        });
+		});
 		$(".sim-btn").on('click',function () {
 			var mycontent = $(".sim-popup").html();
 	        layer.open({
@@ -388,5 +394,6 @@
 	  };
 	});
 </script>
+
 </body>
 </html>
