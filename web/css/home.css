@@ -27,18 +27,8 @@
 	color: #fff;
 	transform: translate(-50%,-50%);
 }
-.carousel .item .item-title-2 {
-	position: absolute;
-	text-align: center;
-	top: 65%;
-	right: 3%;
-	transform: translate(-3%,-65%);
-	font-size: 48px;
-	color: #333;
-}
-.carousel .item .item-title-1 h1,
-.carousel .item .item-title-2 h1 {
-	margin-bottom: 20px;
+.carousel .item .item-title-1 h1 {
+	margin-bottom: 15px;
 }
 .carousel-control {
 	position: absolute;
